@@ -1,13 +1,20 @@
-import { theme } from '@chakra-ui/core'
+import { extendTheme } from '@chakra-ui/core'
 
-export default {
-    ...theme,
+// 2. Call `extendTheme` and pass your custom values
+const theme = extendTheme({
     colors: {
-        ...theme.colors,
         brand: {
-            900: '#1a365d',
-            800: '#153e75',
-            700: '#2a69ac',
+            '50': '#f3f8f9',
+            '100': '#eaf6f9',
+            '200': '#c0e1f9',
+            '300': '#9acaf8',
+            '400': '#62a2f5',
+            '500': '#3a76f2',
+            '600': '#3055ee',
+            '700': '#2d44e0',
+            '800': '#2a36b7',
+            '900': '#222f8e',
         },
     },
-}
+})
+export default theme
