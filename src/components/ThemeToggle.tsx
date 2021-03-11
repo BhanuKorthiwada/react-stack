@@ -1,8 +1,7 @@
-import React from 'react'
-import { useColorMode, Box, Button } from '@chakra-ui/core'
+import { useColorMode, Box, Button } from '@chakra-ui/react'
 import { FaMoon, FaSun } from 'react-icons/fa'
 
-export default () => {
+const ThemeToggle = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
@@ -17,3 +16,5 @@ export default () => {
     </Box>
   )
 }
+
+export default ThemeToggle

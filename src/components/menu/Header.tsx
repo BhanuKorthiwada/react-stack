@@ -1,8 +1,7 @@
-import React from 'react'
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, Box } from '@chakra-ui/core'
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, Box } from '@chakra-ui/react'
 import { ThemeToggle } from 'components'
 
-export default ({ ...props }) => {
+const Header = ({ ...props }) => {
   return (
     <Box>
       <ThemeToggle />
@@ -24,3 +23,5 @@ export default ({ ...props }) => {
     </Box>
   )
 }
+
+export default Header
